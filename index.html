@@ -95,7 +95,7 @@
     root: '/',
     scheme: 'Mist',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -183,6 +183,36 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
           </a>
         </li>
       
@@ -300,14 +330,21 @@
       
         
           
-            <h3 id="单词移动"><a href="#单词移动" class="headerlink" title="单词移动"></a>单词移动</h3><p>大写模式下移动时会忽略标点符号<br>在命令前加上数字表示执行次数，如：<code>2w</code>表示向后移动两个单词</p>
-<ul>
-<li><code>w</code>: 移动到下一个单词开头</li>
-<li><code>e</code>: 移动到下一个单词末尾</li>
-<li><code>b</code>: 移动到上一个单词开头</li>
-</ul>
+          单词移动大写模式下移动时会忽略标点符号在命令前加上数字表示执行次数，如：2w表示向后移动两个单词
+
+w: 移动到下一个单词开头
+e: 移动到下一个单词末尾
+b: 移动到上一个单词开头
+
 
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/27/vim-move/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -425,21 +462,21 @@
       
         
           
-            <p>在vim中可以使用<code>:s</code>命令进行字符串的替换，具体方法如下：</p>
-<hr>
-<p>将当前行第一个old替换为new<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:s/old/new</span><br></pre></td></tr></table></figure></p>
-<p>将当前行所有的old替换为new<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:s/old/new/g</span><br></pre></td></tr></table></figure></p>
-<hr>
-<p>将第n行到最后一行中每一行第一个old替换为new<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:n,$s/old/new</span><br></pre></td></tr></table></figure></p>
-<p>将第n行到最后一行中所有的old替换为new<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:n,$s/old/new/g</span><br></pre></td></tr></table></figure></p>
-<p>将<code>n</code>换成<code>.</code>表示从当前行开始到最后一行</p>
-<hr>
-<p>将每一行中的第一个old替换为new</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:%s/old/new</span><br></pre></td></tr></table></figure>
-<p>将每一行中所有的old替换为new</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:%s/old/new/g</span><br></pre></td></tr></table></figure>
+          在vim中可以使用:s命令进行字符串的替换，具体方法如下：
 
-          
+将当前行第一个old替换为new1:s/old/new
+将当前行所有的old替换为new1:s/old/new/g
+
+将第n行到最后一行中每一行第一个old替换为new1:n,$s/old/new
+将第n行到最后一行中所有的old替换为n
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/24/vim-string-replace/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -531,10 +568,10 @@
               
               
               <div class="site-state-item site-state-tags">
-                
+                <a href="/tags/index.html">
                   <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">标签</span>
-                
+                </a>
               </div>
             
 
